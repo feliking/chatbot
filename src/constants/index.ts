@@ -1,3 +1,5 @@
+import {config} from 'dotenv'
+config()
 export const firestoreConfig = {
   apiKey: process.env.API_KEY,
   authDomain: process.env.AUTH_DOMAIN,
