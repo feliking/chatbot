@@ -8,9 +8,9 @@ export class ApplicationController {
 
   @Post()
   async createMessage(@Body() datos: WhatsappRequestDto) {
-    const result = await this.applicationService.create(datos)
+    const result = await this.applicationService.update(datos)
     return {
-      reply: "Hello"
+      reply: result
     }
   }
 }

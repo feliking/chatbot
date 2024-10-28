@@ -4,4 +4,5 @@ export class WhatsappRequestDto {
   message: string;
   group_name: string;
   phone: string;
+  timestamps: number
 }
